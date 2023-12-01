@@ -1,3 +1,8 @@
+/*VARIABLES*/
+:root {
+    --gray : #8e8c8c; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +12,6 @@
 
 html {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -16,6 +20,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
 img {
     width: 100%;
 }
@@ -23,8 +31,8 @@ img {
 
 /*HEADER*/
 .header {
-    box-shadow: 0px 1px 4px 0px rgb(171, 170, 170);
-    padding: 10px 80px;
+    box-shadow: 0px 1px 4px 0px var(--gray);
+    padding: 15px 80px;
 }
 
 .header__logo {
@@ -42,7 +50,7 @@ img {
 
 /*CREATE ACCOUNT*/
 main {
-    padding: 100px 200px;
+    padding: 80px 180px;
 }
 
 .signup {
@@ -51,11 +59,12 @@ main {
 
 .signup__title {
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 .signup__rrss {
     display: inline-block;
-    padding: 3px 10px 3px 3px;
+    padding: 4px 12px 4px 4px;
     border-radius: 4px;
     color: white;
     margin-right: 15px;
@@ -70,6 +79,7 @@ main {
 }
 .signup__logo {
     width: 30px;
+    margin-right: 7px;
     vertical-align: middle;
 }
 
@@ -94,24 +104,44 @@ main {
     padding: 12px;
     margin-bottom: 30px;
     border-radius: 5px;
-    border: 2px solid rgb(173, 173, 173);
+    border: 2px solid var(--gray);
 }
 
+
+.form__password-wrapper{
+    position: relative;
+}
+
+.form__showHide {
+    position: absolute;
+    width: 20px;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+
 .form__send {
-    margin: 25px 0;
+    margin: 30px 0;
     padding: 20px 30px;
     font-size: 15px;
     color: rgb(167, 165, 165);
     font-weight: bold;
     letter-spacing: 2px;
     background-color: white;
-    border: 4px dotted rgb(167, 165, 165);
-    border-radius: 30px;
+    border: 3px dashed var(--gray);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.form__send:hover {
+    color: black;
+    border: 3px solid #ef4023;
 }
 
 /***FOOTER***/
 .footer {
-    box-shadow: 0px -1px 4px 0px rgb(171, 170, 170);
+    box-shadow: 0px -1px 4px 0px var(--gray);
     padding: 30px 80px;
 }
 
@@ -126,5 +156,5 @@ main {
 
 .footer__item--inc,
 .footer__link {
-    color: gray;
+    color: var(--gray);
 }
