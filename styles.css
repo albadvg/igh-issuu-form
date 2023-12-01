@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*HEADER*/
+.header {
+    box-shadow: 0px 1px 4px 0px rgb(171, 170, 170);
+    padding: 10px 80px;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__txt {
+    float: right;
+}
+
+.header__signin {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/*CREATE ACCOUNT*/
+main {
+    padding: 100px 200px;
+}
+
+.signup {
+    width: 50%;
+}
+
+.signup__title {
+    margin-bottom: 30px;
+}
+
+.signup__rrss {
+    display: inline-block;
+    padding: 3px 10px 3px 3px;
+    border-radius: 4px;
+    color: white;
+    margin-right: 15px;
+}
+
+.signup__rrss--g {
+    background-color: rgb(0, 128, 255);
+}
+
+.signup__rrss--fb {
+    background-color: rgb(9, 51, 92);
+}
+.signup__logo {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.signup__rrss-link {
+    color: white;
+    vertical-align: middle;
+}
+
+.signup__p {
+    margin: 30px 0;
+}
+
+/*form*/
+.form__label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(173, 173, 173);
+}
+
+.form__send {
+    margin: 25px 0;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: rgb(167, 165, 165);
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: white;
+    border: 4px dotted rgb(167, 165, 165);
+    border-radius: 30px;
+}
+
+/***FOOTER***/
+.footer {
+    box-shadow: 0px -1px 4px 0px rgb(171, 170, 170);
+    padding: 30px 80px;
+}
+
+.footer__item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer__item--inc {
+    margin-right: 100px;
+}
+
+.footer__item--inc,
+.footer__link {
+    color: gray;
+}
